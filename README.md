@@ -1,2 +1,3 @@
-# anama-holdings
-second static anama holdings site
+# Anama Holdings Website
+
+Deploy via GitHub Pages following the instructions in Settings → Pages.
