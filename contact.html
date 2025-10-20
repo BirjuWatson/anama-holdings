@@ -1,1 +1,65 @@
-<h1>Contact - Anama Holdings</h1>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Anama Holdings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    :root{ --gold:#d4af37; --bg:#0b0b0b; --muted:#cfcfcf; } body{background:var(--bg);color:#fff;font-family:Poppins}
+    .gold-text{ background:linear-gradient(90deg,#fff8e6,#ffe69a,#d4af37); background-clip:text;color:transparent; animation:shine 3s linear infinite; background-size:200% 100%}
+    .muted{ color:var(--muted); }
+    .input { background:#0f0f0f;border:1px solid rgba(255,255,255,0.04); padding:.75rem; border-radius:8px; color:#fff; width:100%;}
+    .map { border-radius:12px; overflow:hidden; border:1px solid rgba(212,175,55,0.06); }
+  </style>
+</head>
+<body>
+  <header class="w-full py-4 px-6 md:px-12 flex items-center justify-between sticky top-0" style="background: linear-gradient(180deg, rgba(0,0,0,.65), rgba(0,0,0,.35));">
+    <a href="index.html" class="flex items-center space-x-3">
+      <div style="width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,#b88b2b,#f2d27b);display:flex;align-items:center;justify-content:center;font-weight:700;color:#080808;">AN</div>
+      <div class="muted text-sm">ANAMA HOLDINGS</div>
+    </a>
+  </header>
+
+  <main class="container mx-auto px-6 md:px-12 py-12">
+    <div class="grid md:grid-cols-2 gap-10">
+      <div>
+        <h1 class="text-3xl font-extrabold gold-text">Contact Us</h1>
+        <p class="muted mt-3">For enquiries, quotes or project discussions — reach out using the form or the contact details below.</p>
+
+        <div class="mt-6">
+          <form action="#" method="POST" onsubmit="alert('This form is a static placeholder. Please integrate an email backend or use GitHub Actions / Formspree to receive messages.'); return false;">
+            <div class="mb-4">
+              <input class="input" name="name" placeholder="Your name" required />
+            </div>
+            <div class="mb-4">
+              <input class="input" type="email" name="email" placeholder="Email address" required />
+            </div>
+            <div class="mb-4">
+              <textarea class="input" name="message" rows="6" placeholder="Message"></textarea>
+            </div>
+            <button class="btn-gold px-6 py-2">Send Message</button>
+          </form>
+        </div>
+
+        <div class="mt-8 muted text-sm">
+          <div><strong>Address:</strong> 7631 Bellpepper Crescent, The Orchards 0182, Pretoria, South Africa</div>
+          <div class="mt-2"><strong>Tel:</strong> +27 84 298 4006</div>
+          <div class="mt-1"><strong>Email:</strong> info@anama.co.za</div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold gold-text">Our Location</h3>
+        <p class="muted mt-2">Pretoria, Gauteng — map placeholder below (replace with Google Maps embed if desired).</p>
+        <div class="map mt-4" style="position:relative;padding-top:56.25%">
+          <iframe src="https://www.google.com/maps?q=The+Orchards+Pretoria&output=embed" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" title="Map"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-gray-800 py-8 text-center muted">© 2025 Anama Holdings (Pty) Ltd</footer>
+</body>
+</html>
