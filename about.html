@@ -1,1 +1,76 @@
-<h1>About Us - Anama Holdings</h1>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Anama Holdings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    :root{ --gold:#d4af37; --gold-dark:#b3882e; --bg:#0b0b0b; --muted:#cfcfcf; }
+    body{ background:var(--bg); color:#fff; font-family:Poppins,system-ui; }
+    .gold-text{ background:linear-gradient(90deg,#fff8e6,#ffe69a 20%,var(--gold)45%,#fffecb55,var(--gold-dark)75%); background-clip:text;color:transparent; animation:shine 3s linear infinite; background-size:200% 100%;}
+    @keyframes shine {0%{background-position:0% 50%}100%{background-position:200% 50%}}
+    .muted{ color:var(--muted); } .card { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border:1px solid rgba(212,175,55,0.08); padding:1rem; border-radius:10px; }
+  </style>
+</head>
+<body>
+  <!-- header (same as home for unity) -->
+  <header class="w-full py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50" style="background: linear-gradient(180deg, rgba(0,0,0,.65), rgba(0,0,0,.35));">
+    <a href="index.html" class="flex items-center space-x-3">
+      <div style="width:46px;height:46px;border-radius:8px;background:linear-gradient(135deg,#b88b2b,#f2d27b);display:flex;align-items:center;justify-content:center;font-weight:700;color:#080808;font-family:Montserrat;">AN</div>
+      <div>
+        <div class="text-sm muted">ANAMA HOLDINGS</div>
+      </div>
+    </a>
+    <nav class="hidden md:flex items-center space-x-8 text-sm">
+      <a href="index.html" class="muted">Home</a>
+      <a href="about.html" class="muted">About</a>
+      <a href="services.html" class="muted">Services</a>
+      <a href="accreditations.html" class="muted">Accreditations</a>
+      <a href="media.html" class="muted">Media</a>
+      <a href="contact.html" class="muted">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container mx-auto px-6 md:px-12 py-12">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl font-extrabold gold-text">About Anama Holdings</h1>
+        <p class="mt-4 muted">Established in 2018 and based in Pretoria, Anama Holdings (Pty) Ltd has steadily expanded across the African continent by delivering turnkey solutions and developing local capacity through skills transfer and strategic partnerships.</p>
+
+        <h3 class="mt-8 text-xl font-semibold">Our Vision</h3>
+        <p class="muted mt-2">To become the customer’s preferred choice, valuing quality, people and the environment.</p>
+
+        <h3 class="mt-6 text-xl font-semibold">Our Mission</h3>
+        <p class="muted mt-2">To be leaders in service delivery and quality in construction, mining, infrastructure, energy and agriculture across Africa.</p>
+
+        <h3 class="mt-6 text-xl font-semibold">Core Values</h3>
+        <ul class="mt-3 ml-5 muted list-disc">
+          <li>Market-driven approach and international cost competitiveness</li>
+          <li>Investment in modern equipment and quality partnerships</li>
+          <li>Environmental compliance and safety-first operations</li>
+          <li>Integrity, accountability and community upliftment</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1526662095235-5e8b4f3dce54?auto=format&fit=crop&w=1400&q=60" alt="Teamwork" class="w-full h-64 object-cover rounded-md mb-4" />
+        <div>
+          <h4 class="text-lg font-semibold">Safety & Standards</h4>
+          <p class="muted mt-2">We operate to international safety and quality management standards, applying ISO-like internal processes even where formal certification is in progress.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="mt-12">
+      <h3 class="text-2xl font-semibold gold-text">Strategy & Local Impact</h3>
+      <p class="muted mt-3">Anama prioritises local hiring where possible, and implements tailored training programs to upskill workforces in project areas — combining practical delivery with social upliftment.</p>
+    </section>
+  </main>
+
+  <footer class="border-t border-gray-800 py-8">
+    <div class="container mx-auto px-6 md:px-12 text-center muted text-sm">© 2025 Anama Holdings (Pty) Ltd • 7631 Bellpepper Crescent, The Orchards 0182, Pretoria, South Africa • info@anama.co.za</div>
+  </footer>
+</body>
+</html>
