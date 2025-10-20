@@ -1,1 +1,54 @@
-<h1>Accreditations - Anama Holdings</h1>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Accreditations — Anama Holdings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    :root{ --gold:#d4af37; --bg:#0b0b0b; --muted:#cfcfcf; } body{background:var(--bg);color:#fff;font-family:Poppins}
+    .gold-text{ background:linear-gradient(90deg,#fff8e6,#ffe69a,#d4af37); background-clip:text;color:transparent; animation:shine 3s linear infinite; background-size:200% 100%;}
+    @keyframes shine{0%{background-position:0 50%}100%{background-position:200% 50%}}
+    .muted{ color:var(--muted); }
+    .cert { border-radius:8px; padding:1rem; border:1px solid rgba(212,175,55,0.06); background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00)); }
+  </style>
+</head>
+<body>
+  <header class="w-full py-4 px-6 md:px-12 flex items-center justify-between sticky top-0" style="background: linear-gradient(180deg, rgba(0,0,0,.65), rgba(0,0,0,.35));">
+    <a href="index.html" class="flex items-center space-x-3">
+      <div style="width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,#b88b2b,#f2d27b);display:flex;align-items:center;justify-content:center;font-weight:700;color:#080808;">AN</div>
+      <div class="muted text-sm">ANAMA HOLDINGS</div>
+    </a>
+  </header>
+
+  <main class="container mx-auto px-6 md:px-12 py-12">
+    <h1 class="text-3xl font-extrabold gold-text">Accreditations & Compliance</h1>
+    <p class="muted mt-3">We maintain strong governance and compliance structures to meet client and regulatory requirements.</p>
+
+    <div class="grid md:grid-cols-3 gap-6 mt-8">
+      <div class="cert">
+        <h3 class="font-semibold">B-BBEE</h3>
+        <p class="muted mt-2">B-BBEE Level 1 contributor — 135% procurement recognition.</p>
+      </div>
+      <div class="cert">
+        <h3 class="font-semibold">COIDA</h3>
+        <p class="muted mt-2">We are COIDA compliant with safety systems in place to protect employees and contractors.</p>
+      </div>
+      <div class="cert">
+        <h3 class="font-semibold">CIDB Grading</h3>
+        <p class="muted mt-2">CE (Civil Engineering), EP (Electrical - Infrastructure), GB (General Building)</p>
+      </div>
+    </div>
+
+    <section class="mt-10">
+      <h3 class="text-xl font-semibold">Quality & Safety</h3>
+      <p class="muted mt-3">Anama practices internationally-recognised safety and management processes (our internal QMS aligns with ISO/OHSAS practices) and continues to work toward formal accreditation where appropriate.</p>
+    </section>
+  </main>
+
+  <footer class="border-t border-gray-800 py-8">
+    <div class="container mx-auto px-6 md:px-12 text-center muted text-sm">© 2025 Anama Holdings (Pty) Ltd</div>
+  </footer>
+</body>
+</html>
