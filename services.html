@@ -1,1 +1,94 @@
-<h1>Services - Anama Holdings</h1>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Anama Holdings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    :root{ --gold:#d4af37; --bg:#0b0b0b; --muted:#cfcfcf; }
+    body{ background:var(--bg); color:#fff; font-family:Poppins,system-ui; }
+    .gold-text{ background:linear-gradient(90deg,#fff8e6,#ffe69a,#d4af37); background-clip:text;color:transparent; animation:shine 3s linear infinite;background-size:200% 100%;}
+    @keyframes shine{0%{background-position:0 50%}100%{background-position:200% 50%}}
+    .card{ border-radius:12px; overflow:hidden; border:1px solid rgba(212,175,55,0.07); background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); }
+    .muted{ color:var(--muted); }
+  </style>
+</head>
+<body>
+  <header class="w-full py-4 px-6 md:px-12 flex items-center justify-between sticky top-0" style="background: linear-gradient(180deg, rgba(0,0,0,.65), rgba(0,0,0,.35));">
+    <a href="index.html" class="flex items-center space-x-3">
+      <div style="width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,#b88b2b,#f2d27b);display:flex;align-items:center;justify-content:center;font-weight:700;color:#080808;">AN</div>
+      <div class="muted text-sm">ANAMA HOLDINGS</div>
+    </a>
+    <nav class="hidden md:flex items-center space-x-6 muted text-sm">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+    </nav>
+  </header>
+
+  <main class="container mx-auto px-6 md:px-12 py-12">
+    <h1 class="text-3xl font-extrabold gold-text">Our Services</h1>
+    <p class="muted mt-3">Anama delivers a full spectrum of civil engineering and mining services — our capacities span urban roads to large-scale mine-site support.</p>
+
+    <div class="grid md:grid-cols-2 gap-8 mt-8">
+      <!-- Civil -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1500&q=60" alt="Civil construction" class="w-full h-56 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold">Civil Construction</h3>
+          <p class="muted mt-2">General civil works, concrete remediation, bridge construction & repair, water infrastructure, and specialist flooring solutions.</p>
+        </div>
+      </div>
+
+      <!-- Mining -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1519397158784-4b8b7dfa6f6b?auto=format&fit=crop&w=1500&q=60" alt="Mining" class="w-full h-56 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold">Mining</h3>
+          <p class="muted mt-2">Open pit design, load & haul, drill & blast, tailings construction, site infrastructure and rehabilitation.</p>
+        </div>
+      </div>
+
+      <!-- Roads & earthworks -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=1500&q=60" alt="Roadworks" class="w-full h-56 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold">Bulk Earthworks & Roadworks</h3>
+          <p class="muted mt-2">Clearing, earthworks, asphalt and paved roads, chip-and-spray, slurry seal and landfill construction.</p>
+        </div>
+      </div>
+
+      <!-- Plant hire -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1556761175-129418cb2dfe?auto=format&fit=crop&w=1500&q=60" alt="Plant hire" class="w-full h-56 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold">Plant & Equipment Hire</h3>
+          <p class="muted mt-2">ADTs, excavators, loaders, graders, rollers, pavers and specialist equipment with operator support options.</p>
+        </div>
+      </div>
+
+      <!-- Electrical -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1500&q=60" alt="Electrical components" class="w-full h-56 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold">Electrical Components Supply</h3>
+          <p class="muted mt-2">Sourcing and supply of substation and infrastructure electrical components for projects and maintenance.</p>
+        </div>
+      </div>
+
+      <!-- Agriculture -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1500&q=60" alt="Agriculture" class="w-full h-56 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold">Agriculture & Support</h3>
+          <p class="muted mt-2">Agricultural development support including mechanical services, land preparation and supply chain assistance.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-gray-800 py-8">
+    <div class="container mx-auto px-6 md:px-12 text-center muted text-sm">© 2025 Anama Holdings (Pty) Ltd</div>
+  </footer>
+</body>
+</html>
