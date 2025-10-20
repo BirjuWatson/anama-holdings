@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="520" height="120" viewBox="0 0 520 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anama Holdings logo">
+  <defs>
+    <!-- Realistic gold gradient -->
+    <linearGradient id="goldGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff8d9"/>
+      <stop offset="15%" stop-color="#ffdf8c"/>
+      <stop offset="45%" stop-color="#d4af37"/>
+      <stop offset="75%" stop-color="#b88622"/>
+      <stop offset="100%" stop-color="#7a5517"/>
+    </linearGradient>
+    <!-- Shine reflection -->
+    <linearGradient id="shineGradient" x1="0" y1="0" x2="1" y2="0.7">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="35%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Drop shadow -->
+    <filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Gold block -->
+  <g transform="translate(8,8)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="104" height="104" rx="14" ry="14" fill="#070707"/>
+    <rect x="6" y="6" width="92" height="92" rx="10" ry="10" fill="url(#goldGradient)"/>
+    <rect x="6" y="6" width="92" height="92" rx="10" ry="10" fill="url(#shineGradient)" opacity="0.55"/>
+
+    <!-- Centered A H Monogram -->
+    <text
+      x="52" y="70"
+      text-anchor="middle"
+      font-family="Montserrat, Arial, sans-serif"
+      font-weight="800"
+      font-size="46"
+      letter-spacing="-1"
+      fill="#0a0a0a"
+      stroke="rgba(0,0,0,0.4)"
+      stroke-width="0.6">A H</text>
+
+    <!-- Metallic overlay -->
+    <text
+      x="52" y="68"
+      text-anchor="middle"
+      font-family="Montserrat, Arial, sans-serif"
+      font-weight="800"
+      font-size="46"
+      letter-spacing="-1"
+      fill="url(#goldGradient)"
+      opacity="0.9">A H</text>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(130,32)">
+    <text x="0" y="28" font-family="Montserrat, Arial, sans-serif" font-size="28" font-weight="700" fill="url(#goldGradient)" style="letter-spacing:1px">ANAMA</text>
+    <text x="0" y="58" font-family="Poppins, Arial, sans-serif" font-size="14" fill="#d9d9d9" style="letter-spacing:1px">HOLDINGS (Pty) Ltd</text>
+    <rect x="0" y="66" width="210" height="1" fill="rgba(212,175,55,0.15)"/>
+  </g>
+</svg>
